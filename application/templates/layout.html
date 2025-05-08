@@ -9,8 +9,20 @@
     <title>{{title}} Page</title>
 </head>
 <body>
+<nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/welcome/Team">Welcome</a></li>
+      <li><a href="/joke">Jokes</a></li>
+</ul>
+</nav>
     <h1>{{ title }}</h1>
     {% block body_content %}
     {% endblock %}
+    <hr>
+<footer>
+    <p>Version: 1</p>
+    <p>&copy; 2025</p>
+</footer>
 </body>
 </html>
