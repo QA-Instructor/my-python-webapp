@@ -1,4 +1,6 @@
 from application import app
+
+
 def f():
     return 3
 
@@ -66,5 +68,6 @@ def test_jokes_page():
         assert b"Tell me a joke" in response.data
         assert b"Tell me another" in response.data
         assert b"Version" in response.data
+
 
 
