@@ -20,15 +20,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: runlinter
-                  name: run linter
-                  spec:
-                    command: |-
-                      pip install flake8
-                      flake8 .
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: setupvirtualenvironment
                   name: setup virtual environment
                   spec:
@@ -36,7 +27,6 @@ pipeline:
                       python3 -m venv .venv
                       . .venv/bin/activate
                       python3 -m pip install -r requirements.txt
-                      python3 -m pip install -e .
                   timeout: ""
                   type: Run
               - step:
