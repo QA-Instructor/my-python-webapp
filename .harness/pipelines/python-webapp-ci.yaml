@@ -41,7 +41,7 @@ pipeline:
                       python3 -m venv .venv
                       . .venv/bin/activate
 
-                      python3 -m pip install -r requirements/test.txt
+                      python3 -m pip install -r requirements.txt
               - step:
                   type: RunTests
                   name: RunTests_1
