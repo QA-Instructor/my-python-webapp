@@ -45,3 +45,8 @@ joke_dict = {0: ["Why was Cinderella so bad a football?", "She kept running away
              20: ["Why did the strawberry cry?", "He found himself in a jam."]
              }
 
+
+@app.route('/hello')
+def hello():
+    return render_template('hello.html', title='Hello')
+
