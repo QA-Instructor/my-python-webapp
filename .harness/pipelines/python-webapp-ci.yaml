@@ -30,6 +30,15 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
+                  type: RunTests
+                  name: RunTests_1
+                  identifier: RunTests_1
+                  spec:
+                    language: Python
+                    buildTool: Pytest
+                    runOnlySelectedTests: true
+                    enableTestSplitting: false
+              - step:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
