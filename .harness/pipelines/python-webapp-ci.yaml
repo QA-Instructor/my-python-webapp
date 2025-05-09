@@ -36,7 +36,7 @@ pipeline:
                     connectorRef: dockerhub_connector
                     repo: victorialloyd/python-webapp
                     tags:
-                      - latest
+                      - <+pipeline.sequenceId>
                     caching: true
                   timeout: ""
                   type: BuildAndPushDockerRegistry
